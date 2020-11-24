@@ -71,7 +71,7 @@ let isLastInStock = function (cars) {
 #### 练习3：使用帮助函数_average重构averageDollarValue，使用函数组合的方式实现
 
 ``` javascript
-let _average = fuction (xs) {
+let _average = function (xs) {
     return fp.reduce(fp.add, 0, xs)/xs.length
 }//<-无须改动
 let averageDollarValue = function (cars){
@@ -87,6 +87,8 @@ let averageDollarValue = function (cars){
 ``` javascript
 let _underscore = fp.replace(/\W+/g, '_')// <-- 无须改动，并在sanitizeNames中使用它
 ```
+
+**实现代码见2.js**
 
 ### 三、基于下面提供的代码，完成后续的四个练习
 
