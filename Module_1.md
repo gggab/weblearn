@@ -102,7 +102,7 @@ class Container{
         this._value = value
     }
     map(fn) {
-        return Container.or(fn(this._value))
+        return Container.of(fn(this._value))
     }
 }
 class Maybe {
@@ -140,7 +140,7 @@ let exl= () => {
 //app.js
 const fp = reuqire('lodash/fp')
 const {Maybe, Container} = require('./support/)
-let xs = Constainer.of(['do', 'ray', 'me', 'fa', 'so', 'la', 'ti', 'do'])
+let xs = Container.of(['do', 'ray', 'me', 'fa', 'so', 'la', 'ti', 'do'])
 let ex2 = () =>{
     //你需要实现的函数
 }
